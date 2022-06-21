@@ -50,6 +50,7 @@ body {
   list-style: none;
   display: inline-block;
   padding: 0 1em;
+  border-right: 1px solid rgb(0, 0, 0);
 }
 .primary-header nav .navigation ul li a {
   text-decoration: none;
@@ -59,6 +60,9 @@ body {
 .primary-header nav .navigation ul li a:hover {
   text-decoration: underline;
   text-underline-position: under;
+}
+.primary-header nav .navigation ul li:nth-child(4) {
+  border: none;
 }
 .primary-header nav .searchbar {
   font-size: 20px;
@@ -113,7 +117,7 @@ section.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2em;
+  flex-wrap: wrap;
 }
 section.hero .hero-img {
   width: 60%;
@@ -124,10 +128,7 @@ section.hero .hero-img img {
   height: 100%;
 }
 section.hero .hero-cat {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  width: 35%;
 }
 section.hero .hero-cat img {
   width: 100%;
@@ -150,12 +151,11 @@ section.hero .hero-cat .cat-name .cat-name-img img {
 section.hero .hero-cat .category {
   background: rgb(33, 84, 113);
   background: linear-gradient(0deg, rgb(33, 84, 113) 0%, rgb(119, 153, 187) 100%);
-  width: 20em;
   height: 115px;
-  padding: 0em 1em;
+  width: 60%;
+  padding: 0em 0.2em;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
 }
 section.hero .hero-cat .category h3 {
@@ -172,18 +172,30 @@ section.carosel {
   align-items: center;
   margin: 4em 0;
 }
+section.carosel .carosel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
 section.carosel .carosel-item {
   width: 12em;
   text-align: justify;
 }
-section.carosel .carosel-item img {
+section.carosel .carosel-item .carosel-img {
   width: 12em;
+}
+section.carosel .carosel-item .carosel-img img {
+  width: 100%;
 }
 section.carosel i {
   background-color: #b44646;
   color: white;
   padding: 2em 0.7em;
   font-size: larger;
+}
+section.carosel i:hover {
+  background-color: #5c2424;
 }
 
 .price {
@@ -293,6 +305,64 @@ footer {
   margin-right: 1em;
 }
 
+@media only screen and (min-width: 1445px) {
+  section.hero .hero-cat .cat-name {
+    justify-content: space-between;
+  }
+  section.hero .hero-cat .cat-name .cat-name-img {
+    height: 150px;
+  }
+  section.hero .hero-cat .cat-name .category {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+
+  section.hero .hero-cat {
+    width: 38%;
+  }
+
+  .primary-header nav .logo {
+    width: 12em;
+  }
+  .primary-header nav .navigation ul li {
+    padding: 0 2px;
+  }
+  .primary-header nav input {
+    width: 15em;
+    padding: 1em;
+  }
+
+  .navbar nav ul li {
+    margin-left: 1em;
+  }
+
+  section.carosel .carosel-item {
+    width: 8em;
+  }
+  section.carosel .carosel-item .carosel-img {
+    width: 8em;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .primary-header nav .navigation ul li {
+    font-size: 12px;
+  }
+  .primary-header nav .searchbar {
+    padding-left: 0.1em;
+  }
+  .primary-header nav .searchbar input {
+    width: 10em;
+  }
+
+  section.hero .hero-cat .cat-name {
+    margin: 1em 0;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .sec-header {
     font-size: 15px;
@@ -315,12 +385,6 @@ footer {
   .primary-header nav .navigation ul li {
     padding: 0.2em;
   }
-  .primary-header nav .searchbar {
-    padding-left: 0.1em;
-  }
-  .primary-header nav .searchbar input {
-    width: 10em;
-  }
 
   .navbar nav li {
     font-size: 15px;
@@ -328,16 +392,20 @@ footer {
   }
 
   section.hero .hero-img {
+    width: 100%;
     height: 380px;
   }
-  section.hero img {
+  section.hero .hero-img img {
     width: 100%;
   }
   section.hero .hero-cat {
-    gap: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
   }
   section.hero .hero-cat .cat-name {
-    margin: auto;
+    width: 30%;
   }
 
   section.carosel .carosel-item {
@@ -354,20 +422,21 @@ footer {
     width: 20em;
   }
 }
-@media only screen and (max-width: 1440px) {
-  body {
-    font-size: 18px;
+@media only screen and (max-width: 900px) {
+  section.hero .hero-img {
+    width: 100%;
   }
-
-  .primary-header nav .logo {
-    width: 12em;
+  section.hero .hero-cat .cat-name .cat-name-img {
+    height: 100px;
   }
-  .primary-header nav .navigation ul li {
-    padding: 0 2px;
+  section.hero .hero-cat .category {
+    height: 100px;
   }
-  .primary-header nav input {
-    width: 15em;
-    padding: 1em;
+  section.hero .hero-cat .category p {
+    font-size: 12px;
+  }
+  section.hero .hero-cat .category h3 {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -397,7 +466,10 @@ footer {
     height: 90%;
   }
   section.hero .hero-cat {
-    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section.hero .hero-cat .cat-name {
+    display: flex;
   }
   section.hero .hero-cat .cat-name .cat-name-img {
     width: 110px;
@@ -417,6 +489,19 @@ footer {
     font-size: 12px;
   }
 
+  section.carosel .carosel-item {
+    width: 5em;
+  }
+  section.carosel .carosel-item p {
+    font-size: 15px;
+  }
+  section.carosel .carosel-item .carosel-img {
+    width: 5em;
+  }
+  section.carosel i {
+    padding: 1em 0.3em;
+  }
+
   .upper-line .info {
     gap: 0.5em;
   }
@@ -424,39 +509,39 @@ footer {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 680px) {
   .sec-header {
     font-size: 10px;
   }
 
-  .navigation, .searchbar, .navbar {
+  .searchbar {
     display: none;
   }
 
-  .primary-header nav .menu-open {
+  .primary-header nav .navigation {
+    text-align: right;
+    font-size: 10px;
+  }
+  .primary-header nav .navigation p {
+    margin-bottom: 1em;
+  }
+  .primary-header nav .navigation ul li {
     display: block;
-    font-size: 25px;
+    border: none;
   }
 
-  section.hero .hero-cat {
+  .navbar nav li {
+    font-size: 10px;
+  }
+
+  section.carosel .carosel-inner {
     flex-direction: column;
   }
-
-  .navigation.menu-slider, .searchbar.menu-slider, .navbar.menu-slider {
-    display: block;
+  section.carosel .carosel-item {
+    width: 8em;
   }
-
-  .navigation {
-    position: fixed;
-    right: 0;
-    top: 20px;
-    z-index: 1;
-    width: 80%;
-    height: 100vh;
-    background-color: #b44646;
-  }
-  .navigation ul li a {
-    color: white;
+  section.carosel .carosel-item .carosel-img {
+    width: 8em;
   }
 
   .upper-line {
@@ -477,7 +562,17 @@ footer {
     font-size: 15px;
   }
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 600px) {
+  section.hero .hero-cat .cat-name {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  section.hero .hero-cat .cat-name {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
   .sec-header {
     font-size: 8px;
   }

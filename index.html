@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cottony</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/a19b7777ea.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div class="sec-header">
@@ -27,11 +29,8 @@
                         <p>Welcome to our online store</p>
                         <ul>
                             <li><a href="#">My Account</a></li>
-                            <li>|</li>
                             <li><a href="#">My Wishlist</a></li>
-                            <li>|</li>
                             <li><a href="#">Checkout</a></li>
-                            <li>|</li>
                             <li><a href="#">Log in</a></li>
                         </ul>
                     </div>
@@ -105,32 +104,60 @@
         </section>
 
         <section class="carosel">
+            <!-- <div class="main-gallery">
+                <div class="gallery-cell">
+                    <div class="carosel-item">
+                        <div class="carosel-img">
+                            <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="price">$34.99</p>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="carosel-item">
+                        <div class="carosel-img">
+                            <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="price">$34.99</p>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="carosel-item">
+                        <div class="carosel-img">
+                            <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="price">$34.99</p>
+                    </div>
+                </div>
+              </div> -->
             <i class="fa-solid fa-angle-left"></i>
-            <div class="carosel-item">
-                <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <p class="price">$34.99</p>
+            <div class="carosel-inner">
+                <div class="carosel-item">
+                    <div class="carosel-img">
+                        <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="price">$34.99</p>
+                </div>
+                <div class="carosel-item">
+                    <div class="carosel-img">
+                        <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="price">$34.99</p>
+                </div>
+                <div class="carosel-item">
+                    <div class="carosel-img">
+                        <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="price">$34.99</p>
+                </div>
             </div>
-            <div class="carosel-item">
-                <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <p class="price">$34.99</p>
-            </div>
-            <div class="carosel-item">
-                <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <p class="price">$34.99</p>
-            </div>
-            <div class="carosel-item">
-                <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <p class="price">$34.99</p>
-            </div>
-            <div class="carosel-item">
-                <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <p class="price">$34.99</p>
-            </div>
+            
             <i class="fa-solid fa-angle-right price"></i>
         </section>
 
@@ -210,7 +237,19 @@
         </footer>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <script>
+        $('main-gallery').flickity({
+        // options
+        cellAlign: 'left',
+        wrapAround: true,
+        contain: true
+        });
+    </script>
+
+    <!-- <script>
         const mobileBtn = document.getElementsByClassName('menu-open');
         const nav = document.getElementsByClassName('navigation');
         const search = document.getElementsByClassName('searchbar');
@@ -228,7 +267,7 @@
             search.classList.remove('menu-slider');
             // shopNav.classList.remove('menu-slider');
         })
-    </script>
+    </script> -->
 
 </body>
 </html>
