@@ -31,7 +31,7 @@ body {
 }
 
 
-.header nav {
+.primary-header nav {
     padding-top: 1em;
     display: flex;
     justify-content: space-between;
@@ -195,10 +195,12 @@ section.hero {
 }
 
 section.carosel {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 4em 0;
+    display: none;
 
     .carosel-item {
         width: 12em;
@@ -254,11 +256,11 @@ footer {
 .upper-line {
     margin-bottom: 1em;
     width: 100%;
-    height: min-content;
+    max-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: larger;
+    font-size: 20px;
     gap: 3em;
 
     .info {
@@ -266,11 +268,10 @@ footer {
         align-items: center;
         gap: 2em;
         width: 50%;
-        height: min-content;
+        height: 50px;
         background-color: $sec-color;
         border-radius: 0 5px 5px 0;
         color: white;
-        padding: 0.2em 1em;
         position: relative;
 
         .triangle {
@@ -280,13 +281,13 @@ footer {
             background-color: $sec-color;
             border-radius: 0.1em;
             position: absolute;
-            right: -0.8em;
+            right: -16px;
             transform: rotate(45deg);
             
         }
 
         p {
-            font-size: small;
+            font-size: 10px;
         }
     }
     
@@ -318,10 +319,14 @@ footer {
             list-style-type: none;
             margin: 0.5em 0;
             text-align: left;
+            a {
+                font-size: 15px;
+            }
         }
 
         h3 {
             font-weight: bold;
+            font-size: 18px;
         }
     }
 
@@ -335,14 +340,18 @@ footer {
     }
 }
 
+
 @media only screen and (max-width: 1024px) {
-    body {
-        font-size: small;
+    .sec-header {
+        font-size: 15px;
+    }
+    .container {
+        width: 90%;
     }
 
-    .header nav {
+    .primary-header nav {
 
-        img {
+        .logo {
             width: 8em;
         }
 
@@ -363,16 +372,37 @@ footer {
             padding-left: 0.1em;
 
             input {
-                width: auto;
+                width: 10em;
+            }
+        }
+    }
+
+    .navbar {
+        nav {
+            li {
+                font-size: 15px;
+                margin-left: 1.2em;
             }
         }
     }
 
     section.hero {
 
+        .hero-img {
+            height: 380px;
+        }
+
         img {
             width: 100%;
         }
+
+        .hero-cat {
+            gap: 1em;
+            .cat-name {
+                margin: auto;
+            }
+        }
+    }
 
         // .hero-cat {
 
@@ -395,7 +425,7 @@ footer {
         //         }
         //     }
         // }
-    }
+    // }
 
     section.carosel {
         .carosel-item {
@@ -422,7 +452,7 @@ footer {
         font-size: 18px;
     }
 
-    .header nav {
+    .primary-header nav {
 
         .logo {
             width: 12em;
@@ -443,94 +473,6 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .sec-header {
-        font-size: 15px;
-    }
-    .container {
-        width: 90%;
-    }
-    .header nav {
-
-        .logo {
-            width: 10em;
-        }
-
-        .searchbar {
-            input {
-                width: 15em;
-            }
-        }
-    }
-
-    .navbar {
-        nav {
-            li {
-                font-size: 15px;
-                margin-left: 1.2em;
-            }
-        }
-    }
-
-    section.hero {
-        .hero-img {
-            height: 380px;
-        }
-        .hero-cat {
-            .cat-name {
-                margin: 0.8em 0;
-                .cat-name-img {
-                    width: 100px;
-                    height: 100px;
-                }
-            }
-            .category {
-                padding: 1.5em 1em;
-                width: auto;
-                height: 100px;
-
-                h3 {
-                    font-size: 18px;
-                }
-                p{
-                    font-size: 15px;
-                }
-            }
-        }
-
-    }
-
-    .upper-line {
-        .info {
-            gap: 1em;
-
-            h3 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 10px;
-            }
-        }
-        input {
-            padding: 0.1em;
-            font-size: 15px;
-        }
-    }
-
-    .footer-info {
-        .foot-part {
-            li {
-                font-size: 15px;
-            }
-
-            h3 {
-                font-size: 20px;
-            }
-        }
-    }
-}
-
 
 @media only screen and (max-width: 768px) {
     .container {
@@ -541,25 +483,50 @@ footer {
         font-size: 12px;
     }
 
-    .header nav {
+    .primary-header nav {
 
         .logo {
-            width: 8em;
+            width: 10em;
+        }
+
+        .searchbar {
+            input {
+                width: 10em;
+            }
+        }
+
+        .navigation {
+            ul {
+                li {
+                    font-size: 10px;
+                }
+            }
         }
     }
 
     section.hero {
+        flex-direction: column;
+        .hero-img {
+            width: 90%;
+            height: 90%;
+        } 
         .hero-cat {
+            flex-direction: row;
+            
             .cat-name {
-                margin: 0.5em 0;
+
                 .cat-name-img {
                     width: 100px;
-                    height: 90px;
+                    height: 70px;
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
             .category {
                 width: auto;
-                height: 90px;
+                height: 70px;
 
                 h3 {
                     font-size: 15px;
@@ -570,5 +537,23 @@ footer {
             }
         }
 
+    }
+
+    .upper-line {
+        .info {
+            gap: 0.5em;
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .sec-header {
+        font-size: 10px;
+    }
+    .header {
+        display: none;
     }
 }
