@@ -12,8 +12,10 @@
 </head>
 <body>
     <div class="sec-header">
-        <p><i class="fa-solid fa-headphones-simple"></i> SUPPORT +91 9876543210</p>
-        <p><i class="fa-solid fa-truck-fast"></i> Shipping : lorem ipsum <span class="color-red">00:00</span></p>
+        <div class="sec-header-inner">
+            <p><i class="fa-solid fa-headphones-simple"></i> SUPPORT +91 9876543210</p>
+            <p><i class="fa-solid fa-truck-fast"></i> Shipping : lorem ipsum <span class="color-red">00:00</span></p>
+        </div>
     </div>
 
     <div class="container">
@@ -39,18 +41,14 @@
                         <input type="text" name="search" id="search" placeholder="Search here...">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-
-                    <div class="menu-open">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <div class="menu-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
                 </nav>
             </div>
     
             <hr>
-    
+            
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <div class="navbar">
                 <nav>
                     <ul>
@@ -104,61 +102,147 @@
         </section>
 
         <section class="carosel">
-            <!-- <div class="main-gallery">
-                <div class="gallery-cell">
-                    <div class="carosel-item">
-                        <div class="carosel-img">
-                            <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <div class="main-container">
+                <div class="slideshow-container">
+        
+                    <div class="mySlides fade" style="display: flex; justify-content: center; align-items: center;">
+                        <div  class="carosel-item rm">
+                            <div class="carosel-img">
+                                <img src="image/daniel-leone-v7daTKlZzaw-unsplash.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <p class="price">$34.99</p>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <div class="carosel-item">
-                        <div class="carosel-img">
-                            <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        <div class="carosel-item rm" >
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/photo-1625293961325-170b642843dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <p class="price">$34.99</p>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <div class="carosel-item">
-                        <div class="carosel-img">
-                            <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                        <div class="carosel-item rm2">
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <p class="price">$34.99</p>
+                        <div class="carosel-item">
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/photo-1655284847835-1684a56f80d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
                     </div>
-                </div>
-              </div> -->
-            <i class="fa-solid fa-angle-left"></i>
-            <div class="carosel-inner">
-                <div class="carosel-item">
-                    <div class="carosel-img">
-                        <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    
+                    <div class="mySlides fade" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="carosel-item rm" >
+                            <div class="carosel-img">
+                                <img src="image/daniel-leone-v7daTKlZzaw-unsplash.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item rm" >
+                            <div class="carosel-img">
+                                <img src="image/daniel-leone-v7daTKlZzaw-unsplash.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item">
+                            <div class="carosel-img rm2">
+                                <img src="https://images.unsplash.com/photo-1655661811387-989070a0fbc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2129&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item">
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/photo-1654840471863-20b08bdbfa03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                      <div class="text">Caption Two</div>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <p class="price">$34.99</p>
-                </div>
-                <div class="carosel-item">
-                    <div class="carosel-img">
-                        <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        
+                    <div class="mySlides fade" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="carosel-item rm" >
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item rm" >
+                            <div class="carosel-img">
+                                <img src="image/daniel-leone-v7daTKlZzaw-unsplash.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item rm2">
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/photo-1649133816831-de3d91d25288?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item">
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/photo-1526228653958-2fda2c7479eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <p class="price">$34.99</p>
-                </div>
-                <div class="carosel-item">
-                    <div class="carosel-img">
-                        <img src="https://images.unsplash.com/flagged/photo-1575517111839-3a3843ee7f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        
+                    <div class="mySlides fade" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="carosel-item rm" >
+                            <div class="carosel-img">
+                                <img src="image/daniel-leone-v7daTKlZzaw-unsplash.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item rm">
+                            <div class="carosel-img" >
+                                <img src="https://images.unsplash.com/photo-1526228653958-2fda2c7479eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item rm2">
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/photo-1654775745367-ad010fd1aea4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                        <div class="carosel-item">
+                            <div class="carosel-img">
+                                <img src="https://images.unsplash.com/photo-1625293961325-170b642843dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p class="price">$34.99</p>
+                        </div>
+                      <div class="text">Caption five</div>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <p class="price">$34.99</p>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+        
                 </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
-            
-            <i class="fa-solid fa-angle-right price"></i>
         </section>
 
         <section class="other-item">
@@ -247,27 +331,43 @@
         wrapAround: true,
         contain: true
         });
-    </script>
 
-    <!-- <script>
-        const mobileBtn = document.getElementsByClassName('menu-open');
-        const nav = document.getElementsByClassName('navigation');
-        const search = document.getElementsByClassName('searchbar');
-        // const shopNav = document.getElementsByClassName('navbar');
-        const mobileBtnExit = document.getElementsByClassName('menu-close');
 
-        mobileBtn.addEventListener('click', ()=> {
-            nav.classList.add('menu-slider');
-            search.classList.add('menu-slider');
-            // shopNav.classList.add('menu-slider');
-        })
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
         
-        mobileBtnExit.addEventListener('click', ()=> {
-            nav.classList.remove('menu-slider');
-            search.classList.remove('menu-slider');
-            // shopNav.classList.remove('menu-slider');
-        })
-    </script> -->
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "flex";
+          dots[slideIndex-1].className += " active";
+        }
+
+        $(document).ready(function(){
+            $(".menu").click(function(){
+                $(".navbar").toggleClass("show");
+            });
+        });
+
+    </script>
 
 </body>
 </html>
